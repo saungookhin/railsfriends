@@ -1,0 +1,9 @@
+<h1>Editing Railsfriend</h1>
+<br/>
+<%= render 'form', railsfriend: @railsfriend %>
+<br/>
+<%= link_to 'Show', @railsfriend, class:"btn btn-secondary" %> 
+
+<%= link_to 'Delete', @railsfriend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+
+<%= link_to 'Back', railsfriends_path, class:"btn btn-dark" %>

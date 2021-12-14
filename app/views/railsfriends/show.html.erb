@@ -1,0 +1,23 @@
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @railsfriend.first_name %>
+    <%= @railsfriend.last_name %>
+  </h1>
+  <p class="lead">
+    <%= @railsfriend.email %>   |
+  <%= @railsfriend.phone %>   |
+  <%= @railsfriend.twitter %>
+  </p>
+  <br/>
+  <%= link_to 'Edit', edit_railsfriend_path(@railsfriend), class:"btn btn-secondary" %> 
+
+  <%= link_to 'Delete', @railsfriend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+  
+<%= link_to 'Back', railsfriends_path, class:"btn btn-dark" %>
+</div>
+
+
+
